@@ -6,4 +6,4 @@ const { createCustomer } = require('../controllers/customers')
 
 router.route('/').post(createCustomer);
 
-module.exports = { router }
+module.exports =  router 

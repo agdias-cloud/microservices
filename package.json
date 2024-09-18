@@ -4,14 +4,15 @@
   "description": "implementation of simple bank",
   "main": "index.js",
   "scripts": {
-    "dev":  "nodemon server.js"
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "colors": "^1.4.0",
     "express": "^4.21.0",
-    "mongoose": "^8.6.2"
+    "mongoose": "^8.6.3"
   },
   "devDependencies": {
     "dotenv": "^16.4.5",
