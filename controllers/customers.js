@@ -1,10 +1,10 @@
 const Customer = require('../models/Customer')
 
-exports.createCustomer =  async (req, res, next) => {
-  
+exports.createCustomer = async (req, res, next) => {
+
   try {
     const customer = await Customer.create(req.body);
-    console.log(customer)
+
     res.status(201).json({
       success: true,
       data: customer
@@ -15,6 +15,6 @@ exports.createCustomer =  async (req, res, next) => {
       error: error
     })
   }
-   
+
 }
 

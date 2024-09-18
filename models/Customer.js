@@ -9,9 +9,18 @@ const CustomerSchema = new mongoose.Schema({
   email: {
     type: String,
     required: true,
-  }
+  },
+  accounts: [
+    {
+      id: Number,
+      type: String,
+      balance: Number
+    }
+  ]
 
 
 })
 
-module.exports = mongoose.model('Customer', CustomerSchema );
+const Customer = mongoose.model('Customer', CustomerSchema)
+
+module.exports = Customer;
